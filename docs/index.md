@@ -9,6 +9,14 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
 
+## Testing code blocks
+
+```bash
+sudo apt update
+```
+
+
+
 ## Project layout
 
     mkdocs.yml    # The configuration file.
