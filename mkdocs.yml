@@ -1,0 +1,102 @@
+# mkdocs.yml
+site_name: Docs
+site_description: Touheed Documents
+site_url: https://docs.techadmin.in
+
+theme:
+  name: material
+
+  palette:
+    # Light mode with custom code block styling
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+  
+    # Dark mode with enhanced code block styling
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+  # Enhanced features with additional customizations
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    #- navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.path
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link  # Tabs
+    - content.action.view
+    - color-scheme.dark-mode
+    - color-scheme.auto-switch
+
+
+
+plugins:
+  - search
+  - awesome-pages
+  - redirects
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.betterem
+  - pymdownx.blocks.caption
+  - pymdownx.inlinehilite
+  # - footnotes
+  - pymdownx.highlight:
+      use_pygments: true
+      pygments_style: one-dark
+      anchor_linenums: true
+      line_spans: __of_line
+      pygments_lang_class: false
+      auto_title: false
+
+  - pymdownx.superfences
+  - abbr
+  - attr_list
+# tabs in md file
+  - pymdownx.tabbed:   
+      alternate_style: true
+      combine_header_slug: true
+
+
+
+# extra_css:
+#   - stylesheets/extra.css
+
+extra:
+  color_scheme:
+    default: Light Mode
+    slate: Dark Mode
+
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to measure effectiveness of our documentation and improve user experience.
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mdthd
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/mdthd
