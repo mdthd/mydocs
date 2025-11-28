@@ -258,14 +258,14 @@ which {systemctl,initctl,service,openrc,runit,s6-svscan} 2>/dev/null
 ```
 
 === "bash"
-    ## This is Bash Code
+    This is Bash Code
 
     ```bash title="Bash Script"
     sudo apt update
     ```
 
 === "csh"
-    ## This CSH
+    This CSH
     
     ```bash title="CSH script"
     sudo apt-get -y update
