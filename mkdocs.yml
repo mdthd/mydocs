@@ -36,7 +36,7 @@ theme:
     - navigation.indexes
     - navigation.top
     - navigation.path
-    - navigation.footer
+    #- navigation.footer
     - toc.follow
     - search.suggest
     - search.highlight
@@ -86,17 +86,19 @@ markdown_extensions:
 #   - stylesheets/extra.css
 
 extra:
+  generator: false
+
   color_scheme:
     default: Light Mode
     slate: Dark Mode
 
-  consent:
-    title: Cookie consent
-    description: >-
-      We use cookies to measure effectiveness of our documentation and improve user experience.
+  # consent:
+  #   title: Cookie consent
+  #   description: >-
+  #     We use cookies to measure effectiveness of our documentation and improve user experience.
 
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/mdthd
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/mdthd
+    # - icon: fontawesome/brands/twitter
+    #   link: https://twitter.com/mdthd

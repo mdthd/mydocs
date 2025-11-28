@@ -256,3 +256,25 @@ or
 ```bash
 which {systemctl,initctl,service,openrc,runit,s6-svscan} 2>/dev/null
 ```
+
+=== bash
+    ## This is Bash Code
+    ```bash title="Bash Script"
+    sudo apt update
+    ```
+
+=== csh
+    ## This CSH
+    
+    ```bash title="CSH script"
+    sudo apt-get -y update
+    ```
+
+??? info
+    this os info
+
+    ### Test info
+
+    `info` iis
+
+END
